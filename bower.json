@@ -1,0 +1,18 @@
+{
+  "name": "todo",
+  "version": "0.0.1",
+  "homepage": "https://github.com/Dealize/todo",
+  "authors": [
+    "dongtao <dongt_os@sari.ac.cn>"
+  ],
+  "description": "todo list",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
