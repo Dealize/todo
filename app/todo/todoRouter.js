@@ -13,6 +13,17 @@
             return $stateProvider
                 .state('layout',{
                     url:'/',
+                    resolve:{
+                        deps:['$ocLazyLoad',function($ocLazyLoad){
+                            return $ocLazyLoad.load([{
+                                name:'todoApp',
+                                files:[
+                                    'app/todo/newTodo/newTodoController.js',
+                                    'app/todo/todoList/todoListController.js'
+                                ]
+                            }])
+                        }]
+                    },
                     views:{
                         "":{
                             templateUrl:'app/todo/main.html',
@@ -26,17 +37,7 @@
                             controller:'todoListController.js'
                         }
                     },
-                    resolve:{
-                        deps:['$ocLazyLoad',function($ocLazyLoad){
-                            return $ocLazyLoad.load([{
-                                name:'todoApp',
-                                files:[
-                                    'app/todo/newTodo/newTodoController.js',
-                                    'app/todo/todoList/todoListController.js'
-                                ]
-                            }])
-                        }]
-                    }
+
                 })
         }
     }
