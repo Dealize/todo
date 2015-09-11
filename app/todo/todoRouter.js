@@ -18,6 +18,8 @@
                             return $ocLazyLoad.load([{
                                 name:'todoApp',
                                 files:[
+                                    'app/commonService/eventBus.js',
+
                                     'app/todo/newTodo/newTodoController.js',
                                     'app/todo/todoList/todoListController.js'
                                 ]
@@ -30,11 +32,13 @@
                         },
                         "newTodo@layout":{
                             templateUrl:'app/todo/newTodo/newTodo.html',
-                            controller:'newTodoController'
+                            controller:'newTodoController',
+                            controllerAs:'vm'
                         },
                         "todoList@layout":{
                             templateUrl:'app/todo/todoList/todoList.html',
-                            controller:'todoListController'
+                            controller:'todoListController',
+                            controllerAs:'vm'
                         }
                     },
 

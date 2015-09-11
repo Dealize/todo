@@ -1,11 +1,10 @@
 (function(){
     'use strict';
-    console.log('todo list load');
     angular.module('todoApp')
         .controller('todoListController',todoListController);
 
-    todoListController.$inject = ['$scope']
-    function todoListController($scope){
+    todoListController.$inject = ['$scope','eventBus']
+    function todoListController($scope,eventBus){
         console.log('todo list  is load');
 
     }
