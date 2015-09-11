@@ -1,5 +1,6 @@
 (function(){
     'use strict';
+    console.log('todo list load');
     angular.module('todoApp')
         .controller('todoListController',todoListController);
 

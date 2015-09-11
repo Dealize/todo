@@ -30,11 +30,11 @@
                         },
                         "newTodo@layout":{
                             templateUrl:'app/todo/newTodo/newTodo.html',
-                            controller:'newTodoController.js'
+                            controller:'newTodoController'
                         },
                         "todoList@layout":{
                             templateUrl:'app/todo/todoList/todoList.html',
-                            controller:'todoListController.js'
+                            controller:'todoListController'
                         }
                     },
 
