@@ -1,5 +1,5 @@
 <table class="table  table-hover table-condensed">
-
+<!--track by 用于清除ng-repeat中给数据添加的$$hashkey属性-->
     <tr ng-repeat="todoInfo in vm.todoList track by $index " ng-class="{'danger':todoInfo.newTodoState=='a','success':todoInfo.newTodoState=='b'}">
         <!--<td>{{todoInfo}}</td>-->
         <td ng-bind="todoInfo.newTodoName"></td>

@@ -7,7 +7,6 @@
 
         todoRouter.$inject = ['$stateProvider','$urlRouterProvider'];
         function todoRouter($stateProvider,$urlRouterProvider){
-            console.log(111);
             $urlRouterProvider
                 .otherwise('/');
             return $stateProvider
