@@ -1,19 +1,22 @@
 <div class="input-group">
     <span class="input-group-addon">To Do Name : </span>
-    <input type="text" class="form-control" ng-model="data.newTodoName"/>
+    <input type="text" class="form-control" ng-model="vm.data.newTodoName"/>
 </div>
 <div class="form-inline" style="margin-top:5px;">
     <div class="form-group" >
         <label class="radio-inline">
-            <input type="radio" name="urgency" value="a" ng-model="data.newTodoState"/>紧急
+            <input type="radio" name="urgency" value="a" ng-model="vm.data.newTodoState"/>紧急
         </label>
         <label  class="radio-inline">
-            <input type="radio" name="urgency" value="b" ng-model="data.newTodoState"/>一般
+            <input type="radio" name="urgency" value="b" ng-model="vm.data.newTodoState"/>一般
         </label>
         <label  class="radio-inline">
-            <input type="radio" name="urgency"  value="c" ng-model="data.newTodoState"/>不紧急
+            <input type="radio" name="urgency"  value="c" ng-model="vm.data.newTodoState"/>不紧急
         </label>
     </div>
-    <button class="btn btn-primary pull-right" ng-click="vm.newTodoSubmit(data)">提交</button>
+    <span style="color:red;font-weight:bolder;font-size: 10px;margin-left:20px;" ng-style="{display:vm.errorInfo}">
+        清单名字不能为空
+    </span>
+    <button class="btn btn-primary pull-right" ng-click="vm.newTodoSubmit(vm.data)">提交</button>
 </div>
 <hr/>

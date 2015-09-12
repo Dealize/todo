@@ -52,7 +52,7 @@
              * for循环里面的东西 我也不知道为什么要这么写,这些都是抄过来的 T.T
              */
             fire:function(event){
-                console.log(event);
+                //console.log(event);
                 var eventType = event.type;;
                 if(eventMap && eventMap[eventType]){
                     for(var i=0;i<eventMap[eventType].length;i++){

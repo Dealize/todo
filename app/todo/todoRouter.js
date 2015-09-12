@@ -19,6 +19,9 @@
                                 name:'todoApp',
                                 files:[
                                     'app/commonService/eventBus.js',
+                                    /*cloudSQLÎÄ¼þ*/
+                                    'app/commonService/Widdog.js',
+
 
                                     'app/todo/newTodo/newTodoController.js',
                                     'app/todo/todoList/todoListController.js'
