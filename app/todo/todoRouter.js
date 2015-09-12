@@ -22,6 +22,7 @@
                                     /*cloudSQLÎÄ¼þ*/
                                     'app/commonService/Widdog.js',
 
+                                    'app/todo/todoDBFactory.js',
 
                                     'app/todo/newTodo/newTodoController.js',
                                     'app/todo/todoList/todoListController.js'

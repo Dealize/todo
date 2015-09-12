@@ -1,7 +1,8 @@
 <table class="table  table-hover table-condensed">
-    <tr ng-repeat="todoInfo in vm.todoList" ng-class="{'danger':todoInfo.data.newTodoState=='a','success':todoInfo.data.newTodoState=='b'}">
+
+    <tr ng-repeat="todoInfo in vm.todoList track by $index " ng-class="{'danger':todoInfo.newTodoState=='a','success':todoInfo.newTodoState=='b'}">
         <!--<td>{{todoInfo}}</td>-->
-        <td ng-bind="todoInfo.data.newTodoName"></td>
+        <td ng-bind="todoInfo.newTodoName"></td>
         <td class="col-md-1"><button class="btn btn-success btn-sm" ng-click="vm.deleteTodo($index)">完成</button></td>
     </tr>
 </table>

@@ -1,4 +1,3 @@
 'use strict';
-//angular.module('app',['todoApp','Config'])
-angular.module('app',['todoApp'])
+angular.module('app',['todoApp','cloudDB'])
 
